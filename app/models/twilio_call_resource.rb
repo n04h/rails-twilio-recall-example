@@ -1,0 +1,2 @@
+class TwilioCallResource < ApplicationRecord
+end
