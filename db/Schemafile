@@ -1,0 +1,8 @@
+create_table "twilio_call_resources", force: :cascade do |t|
+  t.string "call_sid", null: false
+  t.json "call_options_json", null: false
+  t.integer "called_count", default: 1, null: false
+  t.datetime "created_at"
+  t.datetime "updated_at"
+  t.index ["call_sid"], unique: true
+end
