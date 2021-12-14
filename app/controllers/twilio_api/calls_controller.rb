@@ -14,7 +14,7 @@ module TwilioApi
       {
         twiml: '<Response><Say>Hello world!</Say></Response>',
         status_callback: status_callback_url,
-        status_callback_event: ['answered', 'completed'],
+        status_callback_event: ['completed'], # Twilio側で発信の処理が終了時にコールバックされるようにする
         status_callback_method: 'POST',
         from: '+8105012345678',
         to: '+8109012345678',

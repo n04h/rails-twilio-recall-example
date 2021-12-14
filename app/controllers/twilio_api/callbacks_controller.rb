@@ -19,7 +19,7 @@ module TwilioApi
     end
 
     def need_recall?
-      %w[completed busy failed no-answer].include?(params[:CallStatus])
+      %w[busy failed no-answer].include?(params[:CallStatus])
     end
   end
 end
